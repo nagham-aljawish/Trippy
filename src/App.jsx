@@ -9,7 +9,13 @@ import SectionTitle from "./components/SectionTitle/SectionTitle"
 import PopularContainer from "./components/PopularContainer/PopularContainer"
 import Container from "./components/Container/Container"
 import Card from "./components/Card/Card"
-
+import Footer from "./components/Footer/Footer"
+import TopFooter from "./components/TopFooter/TopFooter"
+import BottomFooter from "./components/BottomFooter/BottomFooter"
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaSquareInstagram } from "react-icons/fa6";
+import { FaBehanceSquare } from "react-icons/fa";
+import { FaTwitterSquare } from "react-icons/fa";
 function App() {
   const items =[
     {
@@ -28,6 +34,20 @@ function App() {
       icon :<BiSolidContact />,
       content: "Contact"
     },
+  ]
+  const icons= [
+    {
+      icon:<FaFacebookSquare />,
+    },
+    {
+      icon:<FaSquareInstagram />,
+    },
+    {
+      icon:<FaBehanceSquare />,
+    },
+    {
+      icon:<FaTwitterSquare />,
+    }
   ]
   return (
     <>
@@ -49,6 +69,9 @@ function App() {
           <Card image="/assets/img/5.jpg" title="Trip in France" description="France, officially the French Republic is a transcontinental country predominantly located in Western Europe and spanning overseas regions and territories in the Americas and the Atlantic, Pacific and Indian Oceans."/>
         </Container>
       </Section>
+      <Footer>
+        <TopFooter title="Trippy" subTitle="Choose your favourite destination." icons={icons}/>
+      </Footer>
     </main>
     </>
   )
