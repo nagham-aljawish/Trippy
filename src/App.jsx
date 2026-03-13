@@ -49,6 +49,24 @@ function App() {
       icon:<FaTwitterSquare />,
     }
   ]
+  const footerLinks = [
+  {
+    title: "Project",
+    links: ["Changelog", "Status", "License", "All Versions"]
+  },
+  {
+    title: "Community",
+    links: ["GitHub", "Issues", "Project", "Twitter"]
+  },
+  {
+    title: "Help",
+    links: ["Support", "Troubleshooting", "Contact us"]
+  },
+  {
+    title: "Others",
+    links: ["Terms of Service", "Privacy Policy", "License"]
+  }
+];
   return (
     <>
     <Header>
@@ -71,6 +89,7 @@ function App() {
       </Section>
       <Footer>
         <TopFooter title="Trippy" subTitle="Choose your favourite destination." icons={icons}/>
+        <BottomFooter footerLinks={footerLinks}/>
       </Footer>
     </main>
     </>

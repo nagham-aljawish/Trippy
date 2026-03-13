@@ -1,21 +1,25 @@
-.bottom {
+.footer-links{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding-top: 2rem;
-    text-align: start;
-    div {
+
+    h3{
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+        padding-bottom: 10px;
+    }
+}
+
+.bottom-column{
     display: flex;
     flex-direction: column;
-    }
-    h4 {
-    display: block;
-    margin-block-start: 1.33em;
-    margin-block-end: 1.33em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    unicode-bidi: isolate;
-    }
+}
 
+.bottom-column a{
+    color: #fafafa;
+    text-decoration: none;
+    padding-bottom: .4rem;
+    font-size: large;
 }

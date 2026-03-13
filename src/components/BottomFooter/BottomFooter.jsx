@@ -1,18 +1,22 @@
 import './BottomFooter.css'
 
-const BottomFooter = ({title , items}) => {
+const BottomFooter = ({footerLinks}) => {
   return (
-    <div className="bottom">
-        <div>
-            <h4>{title}</h4>
-            <ul>
-            {items?.map((item , index) => {
-                return(
-                    <li key={index}> {item?.content}</li>
-                )
+    <div className="footer-links">
+
+      {footerLinks?.map((item , index) => {
+        return(
+          <div key={index} className="bottom-column">
+
+            <h3>{item.title}</h3>
+
+            {item.links?.map((link , i) => {
+              return <a key={i} href="/">{link}</a>
             })}
-        </ul>
+
         </div>
+        )
+    })}
     </div>
   )
 }
