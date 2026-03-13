@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import "./NavBar.css"
 const NavBar = ({logo , items , btn}) => {
   return (
@@ -7,7 +8,7 @@ const NavBar = ({logo , items , btn}) => {
         <ul>
             {items?.map((item , index) => {
                 return(
-                    <li key={index}>{item?.icon} {item?.content}</li>
+                    <li key={index}><Link to={item?.url}>{item?.icon} {item?.content}</Link></li>
                 )
             })}
         </ul>

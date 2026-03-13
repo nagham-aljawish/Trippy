@@ -19,19 +19,23 @@ const Home = () => {
     const items =[
         {
           icon :<FaHouseChimneyUser /> ,
-          content: "Home"
+          content: "Home",
+          url: "/"
         },
         {
           icon :<FaCircleInfo /> ,
-          content: "About"
+          content: "About",
+          url: "/about"
         },
         {
           icon :<MdOutlineHomeRepairService />,
-          content: "Service"
+          content: "Service",
+          url: "/service"
         },
         {
           icon :<BiSolidContact />,
-          content: "Contact"
+          content: "Contact",
+          url: "/contact"
         },
       ]
     const icons= [
