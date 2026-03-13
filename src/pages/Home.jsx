@@ -1,79 +1,15 @@
-import { BiSolidContact } from "react-icons/bi";
-import { FaBehanceSquare, FaFacebookSquare, FaTwitterSquare } from "react-icons/fa";
-import { FaCircleInfo, FaHouseChimneyUser, FaSquareInstagram } from "react-icons/fa6";
-import { MdOutlineHomeRepairService } from "react-icons/md";
 import Header from "../components/Header/Header";
-import NavBar from "../components/NavBar/NavBar";
 import Hero from "../components/Hero/Hero";
 import Section from "../components/Section/Section";
 import SectionTitle from "../components/SectionTitle/SectionTitle";
 import PopularContainer from "../components/PopularContainer/PopularContainer";
 import Container from "../components/Container/Container";
 import Card from "../components/Card/Card";
-import Footer from "../components/Footer/Footer";
-import TopFooter from "../components/TopFooter/TopFooter";
-import BottomFooter from "../components/BottomFooter/BottomFooter";
-
 
 const Home = () => {
-    const items =[
-        {
-          icon :<FaHouseChimneyUser /> ,
-          content: "Home",
-          url: "/"
-        },
-        {
-          icon :<FaCircleInfo /> ,
-          content: "About",
-          url: "/about"
-        },
-        {
-          icon :<MdOutlineHomeRepairService />,
-          content: "Service",
-          url: "/service"
-        },
-        {
-          icon :<BiSolidContact />,
-          content: "Contact",
-          url: "/contact"
-        },
-      ]
-    const icons= [
-          {
-            icon:<FaFacebookSquare />,
-          },
-          {
-            icon:<FaSquareInstagram />,
-          },
-          {
-            icon:<FaBehanceSquare />,
-          },
-          {
-            icon:<FaTwitterSquare />,
-          }
-        ]
-    const footerLinks = [
-  {
-    title: "Project",
-    links: ["Changelog", "Status", "License", "All Versions"]
-  },
-  {
-    title: "Community",
-    links: ["GitHub", "Issues", "Project", "Twitter"]
-  },
-  {
-    title: "Help",
-    links: ["Support", "Troubleshooting", "Contact us"]
-  },
-  {
-    title: "Others",
-    links: ["Terms of Service", "Privacy Policy", "License"]
-  }
-];
   return (
     <div>
     <Header>
-    <NavBar logo= "Trippy" items={items} btn="Sign Up"/>
     <Hero bgImage="/assets/img/herobg.jpg" title="Your Journey Your Story" description="Choose Your Favourite Destination." btn="Travel Now" />
     </Header>
     <main>
@@ -90,10 +26,6 @@ const Home = () => {
           <Card image="/assets/img/5.jpg" title="Trip in France" description="France, officially the French Republic is a transcontinental country predominantly located in Western Europe and spanning overseas regions and territories in the Americas and the Atlantic, Pacific and Indian Oceans."/>
         </Container>
       </Section>
-      <Footer>
-        <TopFooter title="Trippy" subTitle="Choose your favourite destination." icons={icons}/>
-        <BottomFooter footerLinks={footerLinks}/>
-      </Footer>
     </main>
     </div>
   )
