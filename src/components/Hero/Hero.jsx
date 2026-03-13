@@ -5,7 +5,7 @@ const Hero = ({title,description,bgImage,btn}) => {
         <img src={bgImage} alt="hero background image" className={styles.background} />
         <h1 className={styles.title}>{title}</h1>
         <p className={styles.description}>{description}</p>
-        <button className={styles.btn}>{btn}</button>
+        {btn ?<button className={styles.btn}>{btn}</button> : ""}
     </div>
   )
 }
