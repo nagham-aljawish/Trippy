@@ -1,0 +1,57 @@
+.form-section {
+  width: 100%;
+  max-width: 700px;
+  margin: 80px auto;
+  padding: 40px;
+  background: #fff;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.form-section h3 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input {
+  width: 100%;
+  padding: 14px 18px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.input:focus {
+  border-color: #000;
+}
+
+.form-section button {
+  margin-top: 10px;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  background: #e5e5e5;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.form-section button:hover {
+  background: #090808;
+  color: white;
+}
+
+.message {
+  min-height: 100px;
+  resize: vertical; 
+}
