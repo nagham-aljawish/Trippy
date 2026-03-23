@@ -1,9 +1,12 @@
+import { useParams } from "react-router-dom"
 
 
 const Service = () => {
+    const params = useParams()
+    console.log(params)
   return (
     <div>
-        hello from service
+        {params.id}
     </div>
   )
 }

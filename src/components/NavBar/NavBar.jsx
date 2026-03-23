@@ -1,6 +1,10 @@
-import {  NavLink } from "react-router-dom"
+import {  NavLink, useNavigate } from "react-router-dom"
 import "./NavBar.css"
 const NavBar = ({logo , items , btn}) => {
+    const navigate = useNavigate()
+    const changeUrl = ()=>{
+        navigate("/auth")
+    }
   return (
     <nav>
         <h1>{logo}</h1>
@@ -21,7 +25,7 @@ const NavBar = ({logo , items , btn}) => {
                 )
             })}
         </ul>
-        <button>{btn}</button>
+        <button onClick={()=>changeUrl()}>{btn}</button>
         </div>
     </nav>
   )
