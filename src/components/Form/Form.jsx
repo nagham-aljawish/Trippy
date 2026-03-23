@@ -5,7 +5,7 @@ const Form = ({title ,fields, buttonText, onSubmit , footerText, footerLink, foo
     <div className="form-section">
         <h3>{title}</h3>
         <form onSubmit={onSubmit}>
-       {fields.map((field, index) =>
+        {fields.map((field, index) =>
         field.type === "textarea" ? (
             <textarea
             key={index}
@@ -21,10 +21,10 @@ const Form = ({title ,fields, buttonText, onSubmit , footerText, footerLink, foo
         name={field.name}
         className="input"
         />
-  )
+    )
 )}
-         <button type="submit">{buttonText}</button>
-      {footerText && (
+        <button type="submit">{buttonText}</button>
+        {footerText && (
           <p className="form-footer">
             {footerText} <a href={footerLink}>{footerLinkText}</a>
           </p>
