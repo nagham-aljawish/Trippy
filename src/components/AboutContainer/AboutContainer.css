@@ -1,0 +1,12 @@
+.aboutContainer{
+    margin-bottom: 3rem;
+    text-align: start;
+    h2{
+        font-size: xx-large;
+        font-weight: bold;    
+    }
+    p{
+        margin-top: 1rem;
+    }
+
+}
