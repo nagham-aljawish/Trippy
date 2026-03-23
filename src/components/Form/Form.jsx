@@ -1,6 +1,6 @@
 import './Form.css'
 
-const Form = ({title ,fields, buttonText, onSubmit}) => {
+const Form = ({title ,fields, buttonText, onSubmit , footerText, footerLink, footerLinkText}) => {
   return (
     <div className="form-section">
         <h3>{title}</h3>
@@ -24,6 +24,11 @@ const Form = ({title ,fields, buttonText, onSubmit}) => {
   )
 )}
          <button type="submit">{buttonText}</button>
+      {footerText && (
+          <p className="form-footer">
+            {footerText} <a href={footerLink}>{footerLinkText}</a>
+          </p>
+        )}
       </form>
     </div>
   )
